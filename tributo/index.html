@@ -2,58 +2,109 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Pesquisa de Satisfação</title>
+    <title>Tributo a Ayrton Senna</title>
 </head>
 <body>
-    <h1>Pesquisa de Satisfação</h1>
+    <header>
+        <h1>Tributo a Ayrton Senna</h1>
+        <img src="imagem1.jpg" alt="Imagem de destaque de Ayrton Senna" width="500">
+    </header>
+    <main>
+        <section>
+            <h2>Apresentação</h2>
+            <p>
+                <strong>Ayrton Senna</strong> foi um dos maiores pilotos da história da 
+                <em>Fórmula 1</em>. Conhecido por sua habilidade excepcional e sua 
+                <strong>determinação</strong>, ele se tornou um símbolo do esporte brasileiro.
+            </p>
+            <p>
+                Sua carreira foi marcada por momentos de <em>superação</em>, 
+                <strong>vitórias inesquecíveis</strong> e uma conexão única com os fãs.
+            </p>
+        </section>
+        <section>
+            <h2>Carreira</h2>
+            <p>
+                Senna iniciou sua trajetória no kart e rapidamente mostrou talento.
+                Ele chegou à <strong>Fórmula 1</strong> em 1984 e conquistou seu primeiro título mundial em 1988.
+            </p>
 
-    <form method="post">
-        <h2>Dados Pessoais</h2>
+            <p>
+                Ao longo de sua carreira, destacou-se por sua performance em condições de chuva,
+                sendo considerado por muitos como o <em>melhor piloto sob chuva</em> da história.
+            </p>
+            <ul>
+                <li>Estreia na Fórmula 1 em 1984</li>
+                <li>Primeiro título mundial em 1988</li>
+                <li>Três títulos mundiais no total</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Conquistas</h2>
+            <table border="1">
+                <tr>
+                    <th>Conquista</th>
+                    <th>Ano</th>
+                </tr>
+                <tr>
+                    <td>Campeão Mundial de Fórmula 1</td>
+                    <td>1988</td>
+                </tr>
+                <tr>
+                    <td>Campeão Mundial de Fórmula 1</td>
+                    <td>1990</td>
+                </tr>
+                <tr>
+                    <td>Campeão Mundial de Fórmula 1</td>
+                    <td>1991</td>
+                </tr>
+                <tr>
+                    <td>Vitória no GP de Mônaco</td>
+                    <td>1987</td>
+                </tr>
+            </table>
+            <p>
+                Suas conquistas refletem sua <strong>excelência</strong> e 
+                <em>dedicação absoluta</em> ao esporte.
+            </p>
+        </section>
+        <section>
+            <h2>Legado</h2>
+            <p>
+                Além de piloto, Senna foi uma figura importante fora das pistas,
+                contribuindo para causas sociais. Seu legado continua vivo através
+                do <strong>Instituto Ayrton Senna</strong>.
+            </p>
 
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value="" required>
-        <br><br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" value="" required>
-        <br><br>
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" value="">
-        <br><br>
+            <ol>
+                <li>Ícone nacional brasileiro</li>
+                <li>Referência mundial no automobilismo</li>
+                <li>Inspirador para futuras gerações</li>
+            </ol>
+        </section>
+    </main>
 
-        <h2>Pesquisa</h2>
+    <aside>
+        <h2>Ficha de Identificação</h2>
+        <img src="imagem2.jpg" alt="Foto de perfil de Ayrton Senna" width="200">
 
-        <p>1. Você ficou satisfeito com o atendimento?</p>
-        <input type="radio" id="satisfeito_sim" name="satisfacao" value="sim">
-        <label for="satisfeito_sim">Sim</label><br>
+        <p><strong>Nome completo:</strong> Ayrton Senna da Silva</p>
+        <p><strong>Data de nascimento:</strong> 21 de março de 1960</p>
+        <p><strong>Local de nascimento:</strong> São Paulo, Brasil</p>
+        <p><strong>Nacionalidade:</strong> Brasileira</p>
+    </aside>
 
-        <input type="radio" id="satisfeito_nao" name="satisfacao" value="nao">
-        <label for="satisfeito_nao">Não</label>
-        <br><br>
+    <!-- RODAPÉ -->
+    <footer>
+        <h3>Referências</h3>
+        <ul>
+            <li><a href="#">https://pt.wikipedia.org/wiki/Ayrton_Senna</a></li>
+            <li><a href="#">https://www.brogan.com.br/pagina/blog-ayrton-senna-curiosidades-sobre-a-lenda/</a></li>
+            <li><a href="#">https://www.f1-fansite.com/pt/f1-drivers/ayrton-senna-da-silva/</a></li>
+        </ul>
 
-        <p>2. Você recomendaria nosso serviço?</p>
-        <input type="radio" id="recomenda_sim" name="recomendacao" value="sim">
-        <label for="recomenda_sim">Sim</label><br>
-
-        <input type="radio" id="recomenda_nao" name="recomendacao" value="nao">
-        <label for="recomenda_nao">Não</label>
-        <br><br>
-
-        <p>3. Como você avalia nosso serviço?</p>
-        <select id="avaliacao" name="avaliacao">
-            <option value="">Selecione</option>
-            <option value="excelente">Excelente</option>
-            <option value="bom">Bom</option>
-            <option value="regular">Regular</option>
-            <option value="ruim">Ruim</option>
-        </select>
-        <br><br>
-        <input type="checkbox" id="compartilhar" name="compartilhar" value="sim">
-        <label for="compartilhar">
-            Autorizo o compartilhamento das minhas respostas com terceiros
-        </label>
-        <br><br>
-        <input type="submit" value="Enviar">
-    </form>
+        <p>Data de criação: 2026</p>
+    </footer>
 
 </body>
 </html>
