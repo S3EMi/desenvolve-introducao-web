@@ -52,9 +52,6 @@ footer {
     padding: 10px;
 }
 
-/* ===== NOVAS REGRAS COM FLEXBOX ===== */
-
-/* 1. RODAPÉ COM FLEXBOX */
 .main footer {
     display: flex;
     justify-content: center;
@@ -83,7 +80,6 @@ footer {
     color: white;
 }
 
-/* 2. SEÇÃO DE BENEFÍCIOS */
 .benefits {
     display: flex;
     flex-direction: row;
@@ -109,7 +105,7 @@ footer {
     margin: 0;
 }
 
-/* 3. SEÇÃO DE PARTICIPAÇÃO */
+
 .participation {
     display: flex;
     flex-direction: row;
@@ -132,24 +128,19 @@ footer {
     margin: 0;
 }
 
-/* Ajuste para quando houver múltiplos parágrafos na participação */
+
 .participation > * {
     width: 50%;
 }
-
-/* 4. REMOVER BORDA DUPLICADA ENTRE BENEFITS E PARTICIPATION */
-/* A seção benefits já tem border-bottom, e participation tem border-top ajustado */
-/* Como benefits é a primeira, mantemos border-bottom nela e removemos qualquer border-top duplicada */
 .participation {
     border-top: none;
 }
 
-/* Ajuste adicional para garantir que benefits e participation não tenham bordas duplicadas */
 .benefits {
     border-bottom: 2px solid #84a98c;
 }
 
 .participation {
     border-top: 2px solid #84a98c;
-    margin-top: -1px; /* Remove o espaço entre as bordas */
+    margin-top: -1px;
 }
