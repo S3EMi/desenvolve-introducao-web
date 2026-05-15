@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea;
+    color: #2f3e46;
+}
+
+a {
+    color: #52796f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #84a98c;
+}
+
+h1, h2, h3 {
+    color: #52796f;
+}
+
+header {
+    background-color: #84a98c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    padding: 20px;
+}
+
+section, .supporting > div {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-left: 5px solid #84a98c;
+}
+
+.sidebar {
+    background-color: #e9ecef;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+footer {
+    background-color: #52796f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ===== NOVAS REGRAS COM FLEXBOX ===== */
+
+/* 1. RODAPÉ COM FLEXBOX */
+.main footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #52796f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.main footer a {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.main footer a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+/* 2. SEÇÃO DE BENEFÍCIOS */
+.benefits {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid #84a98c;
+    border-bottom: 2px solid #84a98c;
+}
+
+.benefits h3 {
+    order: 2;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+    background-color: #f4f1ea;
+}
+
+.benefits p {
+    order: 1;
+    width: 70%;
+    padding: 15px;
+    margin: 0;
+}
+
+/* 3. SEÇÃO DE PARTICIPAÇÃO */
+.participation {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #84a98c;
+}
+
+.participation h3 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+    background-color: #f4f1ea;
+}
+
+.participation p {
+    width: 50%;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Ajuste para quando houver múltiplos parágrafos na participação */
+.participation > * {
+    width: 50%;
+}
+
+/* 4. REMOVER BORDA DUPLICADA ENTRE BENEFITS E PARTICIPATION */
+/* A seção benefits já tem border-bottom, e participation tem border-top ajustado */
+/* Como benefits é a primeira, mantemos border-bottom nela e removemos qualquer border-top duplicada */
+.participation {
+    border-top: none;
+}
+
+/* Ajuste adicional para garantir que benefits e participation não tenham bordas duplicadas */
+.benefits {
+    border-bottom: 2px solid #84a98c;
+}
+
+.participation {
+    border-top: 2px solid #84a98c;
+    margin-top: -1px; /* Remove o espaço entre as bordas */
+}
